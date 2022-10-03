@@ -16,10 +16,10 @@
         <input type="text" name="foods" id="food=suggestions" required/>
 
         <label for="emai-address" > Please Enter E-mail:</label>
-        <input type="email" name="email" id="email-address" minlength="6" maxlength= "40"/> 
+        <input type="email" name="email" id="email-address" minlength="6" maxlength= "40" required/> 
 
-        <label for="password"> Please Enter Your Password</label>
-        <input type="password" name="userPassword" id="password"/>
+        <label for="password"> Please Enter Your Password {Required}</label>
+        <input type="password" name="userPassword" id="password" required/>
 
         <br/>
         <br/>
@@ -31,18 +31,26 @@
             <legend>Choose your food features:</legend>
         
            
-              <input type="checkbox" id="spicy-food" name="spicy"
+              <input type="checkbox" id="spicy-food" name="Spicy"
                      checked>
-              <label for="scales">Scales</label>
+              <label for="spicy-food">Spicy</label>
            
         
            
-              <input type="checkbox" id="horns" name="horns">
-              <label for="horns">Horns</label>
+              <input type="checkbox" id="tangy-food" name="Tangy">
+              <label for="tangy-food">Tangy</label>
             
         </fieldset>
         
-       
+       <label for="Country"> Which Country Are You From</label>
+       <select name="countrySelect" id="country"> 
+        <optgroup label="North America">
+         <option value = "canada"> Canada</option>
+
+        </optgroup>
+
+       </select>
+
         <br/>
         <br/>
 
@@ -57,18 +65,9 @@
 
         <br/>
 
-        <label for="submit">Enter to Submit</label>
-        <input type="submit" name="userSubmit" id="submit"/>
-
-        <br/>
-        <br/>
-
-        <label for="reset"> Press to Reset</label>
-        <input type="reset" name="formReset" id="reset"/>
-        <br/>
-        <br/>
+       
         <label for="story"> Tell us your story:</label>
-       <textarea id="story" name="story" rows="7" cols="36"></textarea>
+      <textarea id="story" name="story" rows="10" cols="50"></textarea>
 
     </form>
 
@@ -79,21 +78,31 @@
         <legend>Select a fav character:</legend>
     
         
-          <input type="radio" id="dora-charac" name="dora" value="dora"
-                 checked>
+          <input type="radio" id="dora-charac" name="radio" value="dora">
           <label for="dora-charac">Dora</label>
         
     
        
-          <input type="radio" id="mulan-charac" name="mulan" value="mulan">
+          <input type="radio" id="mulan-charac" name="radio" value="mulan">
           <label for="mulan-charac">Mulan</label>
        
     
-          <input type="radio" id="rapunzel-charac" name="rapunzel" value="rapunzel">
+          <input type="radio" id="rapunzel-charac" name="radio" value="rapunzel">
           <label for="rapunzel-charac">Rapunzel</label>
         
     </fieldset>
+    <br/>
+    <br/>
+    <label for="submit">Enter to Submit</label>
+    <input type="submit" name="userSubmit" id="submit"/>
 
+    <br/>
+    <br/>
+    
+    <label for="reset"> Press to Reset</label>
+    <input type="reset" name="formReset" id="reset"/>
+    
+   
 </form>
 
 </body>
